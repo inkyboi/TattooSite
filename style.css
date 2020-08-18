@@ -1,0 +1,204 @@
+@media screen and (max-width: 480px) {
+
+.buttonescu {
+    font-size: 2.0rem !important;
+}
+
+#slide1, #slide2, #slide3 {
+    height: 450px !important;
+}
+
+header ul {
+    display: inline-block;
+    line-height: 2px;
+    padding: 10px;
+    font-size: 1vh;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+    }
+
+.short-text {
+    visibility: visible !important;
+    color: white;
+    position: absolute;
+    width: 30vh;
+    margin: 10vh auto;
+    margin-left: -33vh;
+}
+.carousel-caption {
+    visibility: hidden;
+    width: 100%;
+}
+}
+
+html {
+    margin:0;
+}
+body {
+     background: #08070d !important;
+     margin: 0;
+     font-family: Arial, sans-serif;
+}
+
+header  {
+    background: #08070d;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+li {
+    display: inline-block !important;
+}
+
+ul {
+    color: white;
+    list-style-type: none ;
+    text-align: center ;
+    margin-top: -50px !important;
+    font-size: 15px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px ;
+    text-decoration: none !important;
+  }
+
+li a:hover {
+    color: tomato !important;
+}
+
+
+header img {
+    width: 120px;
+    margin-top: 2px;
+}
+
+.item img {
+    border-bottom: 1px solid white;
+    filter: brightness(50%);
+}
+
+.carousel-caption {
+    padding: 300px !important;
+    text-align: left !important;
+}
+
+.carousel-caption p {
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.short-text {
+    visibility: hidden;
+}
+
+footer {
+    position:absolute;
+    width:100%;
+    right: 0;
+    left: 0;
+    height:100px;   /* Height of the footer */
+    background:#08070d;
+    margin-top: 100px;
+    padding: 10px;
+    border-top: 1px solid lightgray;
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    scale: 1.2;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 50%;
+  }
+
+.fa:hover {
+    background: white;
+}
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+/* -------------------------------------- BUTTON ----------------------------------------------- */
+
+.wrapperino {
+    padding: 1.5rem 0;
+}
+
+.buttonescu:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.buttonescu {
+    display: inline-block;
+    text-align: center;
+    background: white;
+    color: tomato;
+    font-weight: bold;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 3.25rem;
+    margin: 200px auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.buttonescu:before,
+.buttonescu:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.buttonescu:before {
+    top: -25%;
+    left: 20%;
+}
+
+.buttonescu:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.buttonescu:hover:before,
+.buttonescu:hover:after {
+    transform: none;
+}
