@@ -1,0 +1,626 @@
+/* -------------------------------------- MEDIA QUERY ----------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+
+.buttonescu {
+    font-size: 2.0rem !important;
+}
+
+#slide1, #slide2, #slide3 {
+    height: 350px !important;
+}
+
+#nav-bar ul {
+    visibility: hidden;
+}
+
+#hide-menu {
+    visibility: visible !important;
+}
+
+header ul {
+    line-height: 2px;
+    padding: 10px;
+    font-size: 1vh;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: 2vh;
+    }
+
+.short-text {
+    visibility: visible !important;
+    color: white;
+    position: absolute;
+    width: 30vh;
+    margin: 16vh auto;
+    margin-left: -32vh;
+}
+.carousel-caption {
+    visibility: hidden;
+    width: 100%;
+}
+
+#parent-container {
+    visibility: hidden;
+}
+}
+/* -------------------------------------- MAIN CONTENT----------------------------------------------- */
+
+html {
+    margin:0;
+    scroll-behavior: smooth;
+}
+body {
+     overflow-x: hidden;
+     background: #08070d !important;
+     margin: 0;
+     font-family: Arial, sans-serif;
+}
+
+header  {
+    background: #08070d;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+li {
+    display: inline-block !important;
+}
+
+ul {
+    color: white;
+    list-style-type: none ;
+    text-align: center ;
+    margin-top: -50px !important;
+    font-size: 15px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px ;
+    text-decoration: none !important;
+  }
+
+li a:hover {
+    color: tomato !important;
+}
+
+
+header img {
+    width: 120px;
+    margin-top: 2px;
+}
+
+/* -------------------------------------- HAMBURGER ----------------------------------------------- */
+
+#hide-menu {
+    visibility: hidden;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: -110px;
+  left: 20px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: tomato;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 260px;
+  margin: -100px 0 0 -50px;
+  padding: 100px;
+  padding-top: 10px;
+  background: transparent;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 1.4vh;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+/* -------------------------------------- END HAMBURGER ----------------------------------------------- */
+
+.item img {
+    border-bottom: 1px solid white;
+    filter: brightness(50%);
+}
+
+.carousel-caption {
+    padding: 300px !important;
+    text-align: left !important;
+}
+
+.carousel-caption p {
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.short-text {
+    visibility: hidden;
+}
+
+/* -------------------------------------- ABOUT US ----------------------------------------------- */
+
+.about-us {
+    position: relative;
+    font-family: monospace;
+}
+
+.about-us h1 {
+    color: white !important;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -20vh;
+    text-align: center;
+    font-size: 8vh;
+}
+
+@media only screen and (max-width: 767px) {
+.about-us h1 {
+    top: -30vh;
+}
+}
+
+#about-text2 {
+    width:100%;
+    overflow: hidden;
+    padding: 15px;
+    margin-top: 30vh;
+    color: white;
+    line-height: 2.3vh;
+ }
+ #one {
+    width:40%;
+    float:left;
+ }
+ #two {
+    width:40%;
+    float:right;
+ }
+
+ .fade-in {
+     opacity: 0;
+     transform: translateY(50px);
+     transition: all 1s ease-out;
+ }
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+ @media only screen and (max-width: 767px)
+ {
+     #one, #two
+     {
+         display: block; 
+         float: none; 
+         width: 100%;
+         padding: 20px 0;
+     }
+ }
+
+ #parent-container::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* -------------------------------------- ARTISTS ----------------------------------------------- */
+
+#artists-anchor .dots {
+    z-index: -1;
+}
+
+#artists-anchor {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 31.4vh;
+    border-top: 1px lightgray solid;
+}
+
+#artists-anchor::before, #artists-anchor::after {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    content: "";
+    border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+    background-image: linear-gradient(45deg, white, tomato);
+    animation: vawe 5s linear infinite;
+}
+#artists-anchor::before {
+    top: -10%;
+    right: -10%;
+}
+#artists-anchor::after {
+    bottom: -10%;
+    left: -15%;
+}
+#artists-anchor .dots {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#artists-anchor .dots span {
+    position: absolute;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, white, tomato);
+    border-radius: 38% 62% 55% 45% / 32% 53% 47% 68%;
+    animation: vawe 7s linear infinite;
+}
+#artists-anchor .dots span:nth-child(1) {
+    top: 10%;
+    left: calc(100% - 360px);
+    width: 75px;
+    height: 75px;
+}
+#artists-anchor .dots span:nth-child(2) {
+    top: 15px;
+    left: 180px;
+    width: 50px;
+    height: 50px;
+    border-radius: 38% 62% 33% 67% / 60% 53% 47% 40%;
+    transform: rotate(90deg);
+}
+#artists-anchor .dots span:nth-child(3) {
+    right: 180px;
+    bottom: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 38% 62% 55% 45% / 52% 53% 47% 48%;
+}
+#artists-anchor .dots span:nth-child(4) {
+    bottom: 50px;
+    left: 240px;
+    width: 20px;
+    height: 20px;
+    border-radius: 38% 62% 55% 45% / 52% 53% 47% 48%;
+}
+#artists-anchor .dots span:nth-child(5) {
+    right: 280px;
+    bottom: 80px;
+    width: 25px;
+    height: 25px;
+    border-radius: 38% 62% 55% 45% / 52% 53% 47% 48%;
+}
+#artists-anchor .dots span:nth-child(6) {
+    top: 6%;
+    left: calc(100% - 400px);
+    width: 25px;
+    height: 25px;
+}
+
+@keyframes vawe {
+    20% {
+        border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
+   }
+    40% {
+        border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+   }
+    60% {
+        border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+   }
+    80% {
+        border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+   }
+}
+
+
+.artists {
+    font-family: monospace;
+    margin-top: 31.5vh;
+    text-align: left;
+    width: 100%;
+    padding: 5vh;
+    text-align: center;
+}
+
+.artists h1 {
+    color: white !important;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 2vh;
+    font-size: 8vh;
+}
+
+@media screen and (max-width: 800px) {
+
+.artists h1 {
+    font-size: 6vh;
+    top: 305vh;
+    width: 100%;
+}
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding-top: 30vh;
+    text-align: center;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+.artists:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column p {
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5vh;
+}
+
+.fade-in2 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1.5s ease-out;
+}
+
+.fade-in2.show {
+   opacity: 1;
+   transform: translateY(0);
+}
+
+/* -------------------------------------- GOOGLE MAP ----------------------------------------------- */
+
+
+iframe {
+    width: 100%;
+}
+
+
+/* -------------------------------------- FOOTER ----------------------------------------------- */
+
+footer {
+    position:absolute;
+    width:100%;
+    right: 0;
+    left: 0;
+    height:100px;   /* Height of the footer */
+    background:#08070d;
+    margin-top: 200px;
+    padding: 10px;
+    border-top: 1px solid lightgray;
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    scale: 1.2;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 50%;
+  }
+
+.fa:hover {
+    background: white;
+}
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  
+/* -------------------------------------- BUTTON ----------------------------------------------- */
+
+.wrapperino {
+    padding: 1.5rem 0;
+}
+
+.buttonescu:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.buttonescu {
+    display: inline-block;
+    text-align: center;
+    background: white;
+    color: tomato;
+    font-weight: bold;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 3.25rem;
+    margin: 15vh auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.buttonescu:before,
+.buttonescu:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.buttonescu:before {
+    top: -25%;
+    left: 20%;
+}
+
+.buttonescu:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.buttonescu:hover:before,
+.buttonescu:hover:after {
+    transform: none;
+}
+
+/* -------------------------------------- BACK TO TOP ----------------------------------------------- */
+
+#return-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  #return-to-top i {
+    color: tomato;
+    margin: 0;
+    position: relative;
+    font-size: 4rem;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  #return-to-top i:hover {
+      transform: scale(1.2);
+      text-shadow: 0 0 4px white, 0 0 4px white, 0 0 4px white;
+}
+  }
+
+
